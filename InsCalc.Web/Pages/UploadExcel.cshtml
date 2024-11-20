@@ -1,0 +1,50 @@
+﻿@page
+@model ExcelValidationApp.Pages.UploadExcelModel
+@{
+    ViewData["Title"] = "Upload Excel File";
+}
+
+<h1>Upload Excel File</h1>
+
+<form method="post" enctype="multipart/form-data">
+    <div>
+        <label for="file">Choose Excel file:</label>
+        <input type="file" id="file" name="File" />
+    </div>
+    <button type="submit">Upload</button>
+</form>
+
+@if (Model.IsError)
+{
+    <p style="color: red;">@Model.Message</p>
+}
+else if (!string.IsNullOrEmpty(Model.Message))
+{
+    <p style="color: green;">@Model.Message</p>
+}
+
+@if (Model.ProcessedData.Count > 0)
+{
+    <h2>Processed Data:</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                @foreach (var column in Model.ProcessedData[0].Keys)
+                {
+                    <th>@column</th>
+                }
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var row in Model.ProcessedData)
+            {
+                <tr>
+                    @foreach (var cell in row.Values)
+                    {
+                        <td>@cell</td>
+                    }
+                </tr>
+            }
+        </tbody>
+    </table>
+}

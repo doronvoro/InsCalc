@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InsCalc.Web", "InsCalc.Web\InsCalc.Web.csproj", "{565417A9-3689-4300-88C9-3FA1B37FCC6A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InsCalc.BL", "InsCalc.BL\InsCalc.BL.csproj", "{D21BE618-E6BC-4D09-8F87-849C60764761}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{565417A9-3689-4300-88C9-3FA1B37FCC6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{565417A9-3689-4300-88C9-3FA1B37FCC6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{565417A9-3689-4300-88C9-3FA1B37FCC6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{565417A9-3689-4300-88C9-3FA1B37FCC6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D21BE618-E6BC-4D09-8F87-849C60764761}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D21BE618-E6BC-4D09-8F87-849C60764761}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D21BE618-E6BC-4D09-8F87-849C60764761}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D21BE618-E6BC-4D09-8F87-849C60764761}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {352F477F-D32A-4888-B2FB-965C9E0C358A}
+	EndGlobalSection
+EndGlobal
